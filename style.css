@@ -1,0 +1,174 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x : hidden ;
+}
+body{
+    height : auto ;
+    background: linear-gradient(rgb(81 55 18),rgb(35 8 12), rgb(10, 186, 255)) ;
+    background-repeat: no-repeat;
+}
+.navbar{
+    width : 98.5% ;
+    height : 50px ;
+    background-color: black ;
+    margin-left : 10px ;
+    margin-right : 10px ;
+
+}
+.image_over{
+    height : 50vw ;
+    width : 98.9vw ;
+    margin-right : 0px ;
+    margin-left : 0px ;
+    position : absolute ;
+    left : 0 ;
+    z-index : 1 ;
+    background-color : rgba(7, 7, 7, 0.841) ;
+    transition: background-color 0.5s ease;
+
+}
+.image_over:hover{
+    background-color : rgba(23, 2, 9, 0.278) ;
+}
+
+.hero_text{
+    width : 100vw ;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    right: 30vw;
+    top: 10vw;
+    left: 54vw;
+    display : flex ;
+    flex-direction: column;
+    gap: 35px;
+}
+@keyframes fade-in-left-normal {
+    0% { transform: translateX(-60px); 
+        opacity: 0; } 
+    100% { transform: translateX(0); opacity: 1;
+    }
+ }
+.hero-line-1{
+    margin-left : 10vw ;
+    animation: fade-in-left-normal 3s ease-in 0.01s 1 normal forwards; 
+}
+.hero-line-2{
+    margin-right : 20vw ;
+    animation: fade-in-left-normal 3.5s ease-in 0.05s 1 normal forwards; 
+}
+.hero-line-3 {
+    margin-left : 7vw ;
+    animation: fade-in-left-normal 4s ease-in 0.08s 1 normal forwards; 
+}
+.hero-inline-1{
+    
+    display : flex ;
+    gap : 1px  !important ;
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+.hero-inline-2{
+    font-size : 3vw ;
+}
+
+.hero {
+    background-image : url("hero_img.jpg") ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 50vw ;
+    width : 98.9vw ;
+    margin-right : 0px ;
+    margin-left : 0px ;
+    position : absolute ;
+    left : 0 ;
+     
+}
+
+.about-me{
+    
+    height: 85vw;
+    width: 100%;
+    position: absolute;
+    top: 52vw;
+    z-index: -1;
+    display: flex;
+    background: linear-gradient(rgb(0 0 0), rgb(23 2 5), rgb(44 20 24), rgb(54 11 17), rgb(91 12 2), rgb(102 35 11), rgb(149 54 1), rgb(149 54 1));
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    padding-top: 20vw;
+    color: white;
+}
+
+.about-text-1{
+    height : auto ;
+    width: 40rem;
+    font-size: 1.8rem;
+    position: absolute;
+    left: 8vw;
+}
+@keyframes fade-in-about-image {
+    0% {
+        transform: rotate(10deg) translateX(-2vw) translateY(2vw);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(0deg) translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+.about-image {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -55vw;
+    top : 24rem ;
+    width: 23vw;
+    height: 36vw;
+    border: solid;
+    border-width: 0.7vw;
+    border-color: #c09a00;
+    position: absolute;
+    left: 69.5vw;
+    animation : fade-in-about-image 1.5s ease-in 0.1s 1 normal forwards; 
+}
+.about-text-2{
+    position: absolute;
+    left: 26vh;
+    top: 170vh;
+    color: #000000;
+    font-size: 8vw;
+}
+.about-text-2-2{
+    position: absolute;
+    left: 46vh;
+    top: 186vh;
+    color: #fee5e5 !important;
+    font-size: 1.8vw;
+}
+.projects{
+    background-color: blue;
+    position: absolute;
+    top: 157vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.c1,c2,c3{
+    width : 20vw ;
+    height : 50vw ;
+    color : gray ;
+    z-index : 3 ;
+}
+.cards1{
+    display : flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    gap : 2vw;
+    z-index: 2 ;
+}
